@@ -7,10 +7,9 @@ Current github pages sitemap:
 
 {% assign root_url = site.github.url | append: "/" %}
 {% for repo in site.github.public_repositories %}
-	{% if repo.homepage contains root_url
-	and repo.homepage != root_url
-	%}
-* [./{{ repo.name }}](./{{ repo.name }})
+	{% if repo.homepage contains root_url %}
+	{% assign rel_path = repo.homepage | replace: root_url %}
+* [./{{ rel_path }}](./{{ rel_path }})
 	{% endif %}
 {% endfor %}
 
