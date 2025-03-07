@@ -5,10 +5,12 @@ I'm a long-time player of [Guardian Tales](https://guardian-tales.fandom.com/wik
 
 Current github pages sitemap:
 
+{% assign repo_homepages = site.github.public_repositories | map: "homepage" | sort_natural %}
 {% assign root_url = site.github.url | append: "/" %}
-{% for repo in site.github.public_repositories %}
-	{% if repo.homepage contains root_url %}
-	{% assign rel_path = repo.homepage | replace: root_url %}
+
+{% for url in repo_homepages %}
+	{% if url contains root_url %}
+	{% assign rel_path = url | replace: root_url, "" %}
 * [./{{ rel_path }}](./{{ rel_path }})
 	{% endif %}
 {% endfor %}
