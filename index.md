@@ -10,8 +10,8 @@ Current github pages sitemap:
 
 {% for url in repo_homepages %}
 	{% if url contains root_url %}
-	{% assign rel_path = url | replace: root_url, "" %}
-* [./{{ rel_path }}](./{{ rel_path }})
+	{% assign rel_path = url | replace: root_url, "./" %}
+* [{{ rel_path }}]({{ rel_path }})
 	{% endif %}
 {% endfor %}
 
