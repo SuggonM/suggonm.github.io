@@ -1,0 +1,9 @@
+.cp_embed_wrapper {
+	display: flex;
+	resize: both;
+	overflow: hidden;
+}
+
+.cp_embed_wrapper iframe {
+	flex-grow: 1;
+}
