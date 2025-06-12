@@ -1,3 +1,7 @@
+.markdown-body {
+	font-family: system-ui, 'Segoe UI', 'Ubuntu', -apple-system, sans-serif;
+}
+
 .cp_embed_wrapper {
 	display: flex;
 	resize: both;
