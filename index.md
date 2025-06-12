@@ -1,23 +1,20 @@
 # Home Page
 Hi, this seems to be my home page for now 🙂
 
-## Test variables
-- `github.url`: {{ site.github.url }}
-- `github.hostname`: {{ site.github.host_name }}
-- `github.pages_hostname`: {{ site.github.pages_hostname }}
-
-I'm a long-time player of [Guardian Tales](https://guardian-tales.fandom.com/wiki/) so most of my current works are based around it, but I intend to soon add stuff outside that topic too
+I'm a long-time player of [Guardian Tales](https://guardian-tales.fandom.com/wiki/User:Suggon){:target="_blank"} so most of my current works are based around it, but I intend to soon add stuff outside that topic too
 
 Current github pages sitemap:
 
 {% assign repo_homepages = site.github.public_repositories | map: "homepage" | sort_natural %}
 {% assign root_url = site.github.url | append: "/" %}
+{% assign root_url_alt = site.github.repository_name | append: "/" | prepend: "https://" %}
+{% assign repo_homepages = root_url | concat: repo_homepages %}
 
 {% for url in repo_homepages %}
-	{% if url contains root_url %}
-	{% assign rel_path = url | replace: root_url, "./" %}
+	{%- if url contains root_url or url contains root_url_alt %}
+	{%- assign rel_path = url | replace: root_url, "./" | replace: root_url_alt, "./" %}
 * [{{ rel_path }}]({{ rel_path }})
-	{% endif %}
+	{%- endif -%}
 {% endfor %}
 
 ## My Works / Designs
@@ -25,9 +22,9 @@ Current github pages sitemap:
 
 <div class="d-flex flex-justify-center">
 	<div class="cp_embed_wrapper" style="width: 100%; height: 600px;">
-		<iframe scrolling="no" title="Hero Card v2" src="https://codepen.io/Suggon/embed/zxYwepJ?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+		<iframe scrolling="no" title="Hero Card" src="https://codepen.io/Suggon/embed/zxYwepJ?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 			See the Pen <a href="https://codepen.io/Suggon/pen/zxYwepJ">
-			Hero Card v2</a> by Suggon (<a href="https://codepen.io/Suggon">@Suggon</a>)
+			Hero Card</a> by Suggon (<a href="https://codepen.io/Suggon">@Suggon</a>)
 			on <a href="https://codepen.io">CodePen</a>.
 		</iframe>
 	</div>
@@ -37,8 +34,8 @@ Current github pages sitemap:
 
 ### Tab Navigation
 
-<iframe height="320" style="width: 100%;" scrolling="no" title="Tab Navigation" src="https://codepen.io/Suggon/embed/MWzqByj?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-	See the Pen <a href="https://codepen.io/Suggon/pen/MWzqByj">
+<iframe height="320" style="width: 100%;" scrolling="no" title="Tab Navigation" src="https://codepen.io/Suggon/embed/wBvErvL?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+	See the Pen <a href="https://codepen.io/Suggon/pen/wBvErvL">
 	Tab Navigation</a> by Suggon (<a href="https://codepen.io/Suggon">@Suggon</a>)
 	on <a href="https://codepen.io">CodePen</a>.
 </iframe>
