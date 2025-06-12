@@ -1,6 +1,11 @@
 # Home Page
 Hi, this seems to be my home page for now 🙂
 
+## Test variables
+- `github.url`: {{ site.github.url }}
+- `github.hostname`: {{ site.github.host_name }}
+- `github.pages_hostname`: {{ site.github.pages_hostname }}
+
 I'm a long-time player of [Guardian Tales](https://guardian-tales.fandom.com/wiki/) so most of my current works are based around it, but I intend to soon add stuff outside that topic too
 
 Current github pages sitemap:
