@@ -1,9 +1,7 @@
 # Home Page
 Hi, this seems to be my home page for now 🙂
 
-I'm a long-time player of [Guardian Tales](https://guardian-tales.fandom.com/wiki/User:Suggon){:target="_blank"} so most of my current works are based around it, but I intend to soon add stuff outside that topic too
-
-Current github pages sitemap:
+{% include profile/README.md %}
 
 {% assign repo_homepages = site.github.public_repositories | map: "homepage" | sort_natural %}
 {% assign root_url = site.github.url | append: "/" %}
