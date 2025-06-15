@@ -24,5 +24,3 @@ Hi, this seems to be my home page for now 🙂
 - [{{ rel_path }}]({{ rel_path }})
 	{%- endif -%}
 {% endfor %}
-
-{% include footer.md %}

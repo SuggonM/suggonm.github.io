@@ -44,5 +44,3 @@ Some projects and designs I worked on while contributing to the wikia. I've quit
 	<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/wF2sgjwiGyxcBAi9VSRnt4/gt-comics?embed-host=share" allowfullscreen></iframe>
 	<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/wF2sgjwiGyxcBAi9VSRnt4/gt-comics?embed-host=share&footer=false" allowfullscreen></iframe>
 </div>
-
-{% include footer.md %}
