@@ -1,5 +1,11 @@
-.markdown-body {
+body {
 	font-family: system-ui, 'Segoe UI', 'Ubuntu', -apple-system, sans-serif;
+}
+section {
+	padding-bottom: revert;
+}
+footer {
+	text-align: right;
 }
 
 .cp_embed_wrapper {
