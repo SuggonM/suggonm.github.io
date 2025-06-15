@@ -1,3 +1,6 @@
+---
+title: My Works
+---
 # My Works / Designs
 Some projects and designs I worked on while contributing to the wikia. I've quit both the wikia and the game after 4 years, but I enjoyed every moment of working on these things :)
 

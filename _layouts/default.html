@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	{% include head-custom.html %}
+	{% include header.html %}
 </head>
 
 <body>
@@ -42,7 +42,13 @@
 
 	</header>
 
-	{{ content }}
+	<main class="wrapper">
+		{{ content }}
+	</main>
+
+	<footer class="wrapper">
+		{% include footer.html %}
+	</footer>
 </body>
 
 </html>

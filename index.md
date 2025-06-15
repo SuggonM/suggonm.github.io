@@ -1,3 +1,8 @@
+---
+title: Suggon
+header: suggon.is-a.dev
+---
+
 Hi, this seems to be my home page for now 🙂
 
 {% include profile/README.md %}
